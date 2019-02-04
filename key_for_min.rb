@@ -3,4 +3,17 @@
 
 def key_for_min_value(name_hash)
 
+current_value = name_hash.values[0]
+  
+  name_hash.each do
+    	|key, value|
+    	
+            if value < current_value
+            then current_value = value
+            end
+        
+        							end
+         
+    name_hash.key(current_value)
+
 end
