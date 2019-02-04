@@ -8,7 +8,7 @@ current_value = nil
   name_hash.each do
     	|key, value|
     	
-            if current_value == nil || 
+            if current_value == nil || value < current_value
             then current_value = value
             end
         
